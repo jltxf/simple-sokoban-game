@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <!--作为标题栏显示-->
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary"
+    >
+  <!--将标题栏放在这里-->
+  <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/push_box_game"
+      android:textColor="@android:color/white"
+
+      android:textSize="20sp"
+      android:layout_centerInParent="true"
+      android:layout_margin="10dp"
+      />
+</android.support.v7.widget.Toolbar>
+    <!--整理字符串到string.xml中     android:text="@string/push_box_game"-->
+  <com.example.game.GameView
+      android:id="@+id/gv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+</LinearLayout>

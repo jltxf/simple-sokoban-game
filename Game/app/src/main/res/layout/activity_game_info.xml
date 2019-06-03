@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameInfoActivity">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/push_box_game"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            />
+        <!--整理字符串到string.xml中     android:text="@string/push_box_game"-->
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="推箱子游戏的目标是把所有的
+箱子推到指定的目标位置上，游戏
+就完成了。玩家应该使用尽量少的
+步数完成一关游戏"
+        android:textSize="20sp"
+        android:background="@android:color/holo_orange_light"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="20sp"
+        android:padding="10dp"/>
+    <!--android:lineSpacingExtra="20sp" 行宽-->
+    <!--android:gravity="center_vertical"上下居中-->
+    <!--android:layout_margin="20dp" 控件边框大小-->
+</LinearLayout>

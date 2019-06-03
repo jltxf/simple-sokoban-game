@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LevelActivity">
+
+  <RelativeLayout
+      android:id="@+id/rl_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/push_box_game"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        />
+    <!--整理字符串到string.xml中     android:text="@string/push_box_game"-->
+  </RelativeLayout>
+
+  <GridView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/gv_level"
+      android:numColumns="3"
+      android:layout_margin="20dp"/>
+  <!--GridView,表格控件-->
+  <!--android:numColumns="3" 列数为3-->
+
+</LinearLayout>
